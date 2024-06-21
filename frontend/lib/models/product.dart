@@ -4,7 +4,12 @@ class Product {
   final String imageUrl;
   final String owner;
 
-  Product({required this.name, required this.description, required this.imageUrl, required this.owner});
+  Product({
+    required this.name,
+    required this.description,
+    required this.imageUrl,
+    required this.owner,
+  });
 
   factory Product.fromJson(Map<String, dynamic> json) {
     return Product(
